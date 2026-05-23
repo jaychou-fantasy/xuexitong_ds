@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "学习通 AI 助手",
+  "version": "0.1.0",
+  "description": "AI-assisted answering helper for Chaoxing Learning Platform — extracts questions and suggests answers via AI.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.chaoxing.com/*",
+    "*://chaoxing.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.chaoxing.com/*",
+        "*://chaoxing.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}

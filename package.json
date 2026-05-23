@@ -1,0 +1,33 @@
+{
+  "name": "xuexitong-ds",
+  "version": "0.1.0",
+  "description": "学习通 AI 答题助手 — Chrome extension for AI-assisted answering on Chaoxing Learning Platform",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.0",
+    "copy-webpack-plugin": "^12.0.0",
+    "css-loader": "^6.8.0",
+    "postcss": "^8.4.0",
+    "postcss-loader": "^7.3.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^3.3.0",
+    "tailwindcss": "^3.4.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tesseract.js": "^5.1.1"
+  }
+}
